@@ -1,0 +1,51 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+  "parameters": {
+      "numberOfVms": {
+          "value": 1
+      },
+      "vNetRGName": {
+          "value": "<The name of the resource group containing the vNet and subnet>"
+      },
+      "vNetName": {
+          "value": "<The name of the vNet to use>"
+      },
+      "subnetName": {
+          "value": "<The name of a subnet within the specified vNet>"
+      },
+      "storageAccountName": {
+          "value": "<The name of the storage account to be used>"
+      },
+      "vmName": {
+          "value": "<The naming convension to use for the VM, excluding numbering>"
+      },
+      "imageOffer": {
+          "value": "<The name of the Azure Image Offer>"
+      },
+      "imageSku": {
+          "value": "<The name of the Azure Image Sku>"
+      },
+      "adminUserName": {
+          "value": "<The local administrator username for the VM>"
+      },
+      "adminPassword": {
+          "value": "<The local administrator password for the VM>"
+      },
+      "domainToJoin": {
+          "value": "<The FQDN of the AD domain>"
+      },
+      "domainUsername": {
+          "value": "<Password of the account on the domain>"
+      },
+      "domainPassword": {
+          "value": "<Password of the account on the domain>"
+      },
+      "ouPath": {
+          "value": "<Specifies an organizational unit (OU) for the VM>"
+      },
+      "imagePublisher": {
+          "value": "<Name of the Azure Image Publisher>"
+      }
+  }
+}
